@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/turbot/go-mastodon"
 	"github.com/urfave/cli/v2"
 )
 

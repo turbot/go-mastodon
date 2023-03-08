@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/turbot/go-mastodon"
 	"github.com/urfave/cli/v2"
 )
 

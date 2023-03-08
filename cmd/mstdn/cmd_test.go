@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/turbot/go-mastodon"
 	"github.com/urfave/cli/v2"
 )
 
