@@ -38,10 +38,10 @@ func (c *Client) GetInstance(ctx context.Context) (*Instance, error) {
 
 // WeeklyActivity holds information for mastodon weekly activity.
 type WeeklyActivity struct {
-	Week          Unixtime `json:"week"`
-	Statuses      int64    `json:"statuses,string"`
-	Logins        int64    `json:"logins,string"`
-	Registrations int64    `json:"registrations,string"`
+	Week          string `json:"week"`
+	Statuses      int64  `json:"statuses,string"`
+	Logins        int64  `json:"logins,string"`
+	Registrations int64  `json:"registrations,string"`
 }
 
 // GetInstanceActivity returns instance activity.
