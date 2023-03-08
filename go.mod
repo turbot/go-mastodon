@@ -1,4 +1,4 @@
-module github.com/turbot/go-mastodon
+module github.com/mattn/go-mastodon
 
 go 1.16
 
