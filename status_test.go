@@ -709,7 +709,7 @@ func TestSearch(t *testing.T) {
 		ClientSecret: "bar",
 		AccessToken:  "zoo",
 	})
-	ret, err := client.Search(context.Background(), "q", false)
+	ret, err := client.Search(context.Background(), "q", "", false, false, "", false, nil)
 	if err != nil {
 		t.Fatalf("should not be fail: %v", err)
 	}

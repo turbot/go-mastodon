@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"testing"
-	"time"
 )
 
 func TestGetInstance(t *testing.T) {
@@ -148,11 +147,12 @@ func TestGetInstanceActivity(t *testing.T) {
 	if err != nil {
 		t.Fatalf("should not be fail: %v", err)
 	}
-	if activity[0].Week != Unixtime(time.Unix(1516579200, 0)) {
-		t.Fatalf("want %v but %v", Unixtime(time.Unix(1516579200, 0)), activity[0].Week)
+	expectedWeek := "1516579200"
+	if activity[0].Week != expectedWeek {
+		t.Fatalf("want %v but %v", expectedWeek, activity[0].Week)
 	}
 	if activity[0].Logins != 1 {
-		t.Fatalf("want %q but %q", 1, activity[0].Logins)
+		t.Fatalf("want %v but %v", 1, activity[0].Logins)
 	}
 }
 

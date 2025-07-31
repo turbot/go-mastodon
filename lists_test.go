@@ -90,11 +90,11 @@ func TestGetListAccounts(t *testing.T) {
 		ClientSecret: "bar",
 		AccessToken:  "zoo",
 	})
-	_, err := client.GetListAccounts(context.Background(), "2")
+	_, err := client.GetListAccounts(context.Background(), "2", nil)
 	if err == nil {
 		t.Fatalf("should be fail: %v", err)
 	}
-	accounts, err := client.GetListAccounts(context.Background(), "1")
+	accounts, err := client.GetListAccounts(context.Background(), "1", nil)
 	if err != nil {
 		t.Fatalf("should not be fail: %v", err)
 	}
